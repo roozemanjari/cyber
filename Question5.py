@@ -1,7 +1,7 @@
-def unique_list(l):
+def multiply_list(l):
   x = 1
   for a in l:
       x=x*a
   return x
 
-print(unique_list([1,2,3,3,4,5])) 
+print(multiply_list([1,2,3,3,4,5])) 
