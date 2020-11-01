@@ -1,0 +1,18 @@
+XAMPP stands for:
+X symbolising Cross Platform
+A = Apache
+M = MySQL
+P = PHP
+P = Perl
+
+The LAMP stack is the foundation for Linux hosted websites is the Linux, Apache, MySQL and PHP (LAMP) software stack.
+
+LAMP stands for :
+L = Linex OS
+A = Apache
+M = MySQL Database
+P = PHP
+
+A LAMP Stack is a set of open-source software that can be used to create websites and web applications. LAMP is an
+acronym, and these stacks typically consist of the Linux operating system, the Apache HTTP Server, the MySQL relational
+database management system, and the PHP programming language.
