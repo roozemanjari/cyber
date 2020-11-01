@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Rooze q2</title>
+</head>
+
+<body>
+    <p id="firstBox">
+        I'm unpredictable, I never know where I'm going until I get there, I'm so random, I'm always growing,
+        learning,
+        changing, I'm never the same person twice. But one thing you can be sure of about me; is I will always do
+        exactly what I want to do.
+    </p>
+
+    <p id="secondBox">
+        A musician must make music, an artist must paint, a poet must write, if he is to be ultimately at peace with
+        himself. What a man can be, he must be
+    </p>
+    <br>
+    <button onclick="swap();"> swap the two paragraphs! </button>
+    <script>
+        function swap() {
+            var one = document.getElementById("firstBox").innerText;
+            var two = document.getElementById("secondBox").innerText;
+            document.getElementById("firstBox").innerText = two;
+            document.getElementById("secondBox").innerText = one;
+        }
+    </script>
+</body>
+
+</html>
