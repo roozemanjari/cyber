@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Rooze q3</title>
+</head>
+
+<body>
+    <form action="#">
+        <table>
+            <tr>
+                <td>First number:</td>
+                <td><input type="text" name="one" required></td>
+            </tr>
+            <tr>
+                <td>Second number:</td>
+                <td><input type="text" name="two" required></td>
+            </tr>
+        </table>
+        <br>
+        <input type="button" onclick="gcd(this.form);" value="Submit">
+        <input type="reset" onclick="resetAnswer();">
+    </form>
+    GCD of the entered numbers: <span id="result"></span>
+    <script>
+        function gcd(form) {
+
+            var a = Math.abs(Number(form.one.value));
+            var b = Math.abs(Number(form.two.value));
+
+            if (b > a) {
+                var temp = a;
+                a = b;
+                b = temp;
+            }
+
+            while (true) {
+                if (b == 0) {
+                    document.getElementById("result").innerText = a;
+                    return false;
+                }
+                a %= b;
+                if (a == 0) {
+                    document.getElementById("result").innerText = b;
+                    return false;
+                }
+                b %= a;
+            }
+        }
+        function resetAnswer() {
+            document.getElementById("result").innerText = '';
+        }
+    </script>
+</body>
+
+</html>
