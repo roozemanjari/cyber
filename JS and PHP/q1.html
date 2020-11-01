@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Rooze q1</title>
+    <style>
+        #firstBox {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background-color: black;
+        }
+
+        #secondBox {
+            width: max-content;
+            height: max-content;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="firstBox"></div>
+    Colour you just chose:
+    <div id="secondBox"></div>
+    <br>
+    <button onclick="setRandomColor();"> Click me to set a random colour! </button>
+    <script>
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var colour = '#';
+            for (var i = 0; i < 6; i++) {
+                colour += letters[Math.floor(Math.random() * 16)];
+            }
+            return colour;
+        }
+        function setRandomColor() {
+            var col = getRandomColor();
+            document.getElementsByTagName("div")[0].style.backgroundColor = col;
+            document.getElementsByTagName("div")[0].style.borderColor = col;
+            document.getElementsByTagName("div")[1].innerText = col;
+        }
+    </script>
+</body>
+
+</html>
